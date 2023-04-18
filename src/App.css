@@ -1,0 +1,81 @@
+.container{
+   height: 100vh;
+   width:100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+
+}
+body{
+   margin: 0;
+}
+.quote-content{
+   border-radius: 3px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 450px;
+   min-height:250px;
+   padding: 40px 50px;
+   background-color: #fff;
+   color:#fff;
+   border-radius: 20px;
+}
+.quote-text p,.quote-text i{
+   display:inline;
+   margin:0;
+   font-size:20px;
+   text-align:center;
+}
+.quote-text i{
+   margin-right:5px;
+   vertical-align: baseline;
+   font-size:30px;
+}
+.quotes-author{
+   text-align:right;
+}
+.quotes-author:before{
+   content:"—";
+   margin-right:5px;
+}
+.quote-link{
+   display:inline-block;
+   height: 30px;
+   width: 40px;
+   font-size:20px;
+   text-align:center;
+   cursor:pointer;
+}
+.quote-interactive{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.newqoute-bth{
+   cursor:pointer;
+   height: 38px;
+   color:#fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+}
+@keyframes opacityanim{
+   0%{
+      opacity:0;
+   }
+   100%{
+      opacity:1;
+   }
+}
+
+
+
+
+.opacityflow-enter{
+   animation:opacityanim .7s ease-in-out;
+}
+.opacityflow-enter-done{
+   opacity:1;
+}
